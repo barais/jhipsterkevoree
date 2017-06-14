@@ -1,0 +1,11 @@
+//sample of KevScript configuration
+add node0: JavaNode/2/LATEST
+add node0.hello: reviewfinaloslo.JhipsterkevoreeCmp/1/{java: '0.0.1-SNAPSHOT'}
+add sync : CentralizedWSGroup/2/LATEST
+attach node0 sync
+set sync.isMaster/node0="true"
+
+
+network node0.lo.ipv6 ::1
+network node0.lo.ipv4 127.0.0.1
+
